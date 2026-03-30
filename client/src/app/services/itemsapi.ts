@@ -7,7 +7,7 @@ import { Cars } from '../models/interface';
 })
 export class Itemsapi {
   public items = signal<Cars[]>([]);
-  private _apiUrl = 'http://localhost:5050/cars';
+  private _apiUrl = 'http://54.247.13.61:5050/cars';
   private _http = inject(HttpClient);
 
   getItems(): void {

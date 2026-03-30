@@ -1,0 +1,29 @@
+<div class="card shadow-sm">
+  <div class="card-body">
+    <h2 class="mb-3">Add Car</h2>
+
+    <form (ngSubmit)="addItem()">
+      <div class="mb-3">
+        <label class="form-label">Make</label>
+        <input type="text" class="form-control" name="make" [(ngModel)]="make" />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Model</label>
+        <input type="text" class="form-control" name="model" [(ngModel)]="model" />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Year</label>
+        <input type="text" class="form-control" name="year" [(ngModel)]="year" />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Image URL</label>
+        <input type="text" class="form-control" name="image" [(ngModel)]="image" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+  </div>
+</div>
